@@ -18,6 +18,8 @@ public class ZajeciaStart {
         for(Dish d : repo.findByNazwa("Pepsi")) System.out.println(d);
         System.out.println("-----------------------------");
         for(Dish d : repo.findByCenaLessThan(15)) System.out.println(d);
+        System.out.println("------------------------------");
+        for (Dish d :repo.findByCenaGreaterThan(10)) System.out.println(d);
 
         ctx.close();
     }
